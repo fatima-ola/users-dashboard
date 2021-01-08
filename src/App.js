@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Dashboard from './components/Dashboard/index';
 
-function App() {
+const App = () => {
   return (
     <div>
-      userdashboard
+     <Dashboard />
     </div>
   );
 }
