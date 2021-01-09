@@ -75,7 +75,7 @@ form{
     display:inline-block;
 }
 
-#closeid{
+#closeid1, #closeid2{
   display: none;
 }
 
@@ -178,4 +178,9 @@ span{
 select{
     width: 40%!important;
     color: #262A41;
+}
+
+
+img {
+    border-radius: 50%;
 }

@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faTimes} from '@fortawesome/free-solid-svg-icons';
+import CardProfile from './../CardProfile/index';
+
 
 const Index = ()=> {
 
     const[allusers, setAllusers] = useState([]);
-    const userApi = "https://randomuser.me/api/?results=5"
+    const userApi = "https://randomuser.me/api/?results=12"   
 
     useEffect(()=>{
         const fetchApi = async () => {
@@ -27,9 +29,9 @@ const Index = ()=> {
            <div>
                <span>
                <form method="get">
-                    <input oninput="triggercross(this.value)" type="text" placeholder="Find in list" id="search" name="search"
-                        class="search" className="browser-default"  />
-                    <button onclick="close1()" id="closeid" type="reset" class="close">
+                    <input  type="text" placeholder="Find in list" id="search2" name="search"
+                        className="search browser-default" />
+                    <button  id="closeid2" type="reset" className="close">
                     <FontAwesomeIcon icon={faTimes} size="1x" />
                         <p id="demo"></p>
                     </button>
@@ -40,9 +42,10 @@ const Index = ()=> {
                </span>
                <span></span>
            </div>
-           {/* {allusers.map((alluser)=>{
-               alluser.
-           })} */}
+           {allusers.map((alluser)=>(
+               <CardProfile picture={alluser.picture.thumbnail} alt="profilepics"/>
+           ))}
+            
         </div>
     )
 }

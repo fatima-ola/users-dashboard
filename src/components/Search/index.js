@@ -7,12 +7,12 @@ import {faSearch, faTimes} from '@fortawesome/free-solid-svg-icons';
 const Index = ()=> {
     return (
         <div>
-            <div class="searchbox">
+            <div className="searchbox">
                 <form method="get">
                 <FontAwesomeIcon size="1x" className="" icon={faSearch}/>
-                    <input oninput="triggercross(this.value)" type="text" placeholder="Find a user" id="search" name="search"
-                        class="search" className="browser-default"  />
-                    <button onclick="close1()" id="closeid" type="reset" class="close">
+                    <input  type="text" placeholder="Find a user" id="search1" name="search"
+                        className="search browser-default"  />
+                    <button  id="closeid1" type="reset" className="close">
                     <FontAwesomeIcon icon={faTimes} size="1x" />
                         <p id="demo"></p>
                     </button>
