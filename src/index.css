@@ -1,13 +1,10 @@
 body{
     padding: 0;
     margin: 0;
-    top: 0px;
-    left: 0px;
     width: 100%;
-    height: 1080px;
-    background: #262A41 0% 0% no-repeat padding-box;
-    opacity: 1;
+   
     color: #000000;
+    height: 900px;
 }
 
 .rightlayer{
@@ -18,7 +15,32 @@ body{
     top: 20px;
     left: 938px;
     width: 961px;
-    height: 1080px;
+    height: 900px;
+}
+
+.leftlayer{
+    background: #262A41 0% 0% no-repeat padding-box;
+    height: 900px;
+    display: flex;
+
+}
+
+.leftcontent{
+    margin: auto;
+}
+
+/* .innercontainer{
+    position: absolute;
+    margin: auto;
+    top: 15%;
+    right: 0;
+    bottom: 0;
+    margin-left: 10%;
+    width: 100%;   
+} */
+
+.display-box{
+    color: #262A41;
 }
 
 .info-details{
@@ -49,8 +71,7 @@ body{
 }
 .searchbox2 input{
     z-index: 0;
-    margin-top: 8%;
-    width: 50%;
+    width: 70%;
     height: 40px;
     background:#F7F7FF;
     border-radius: 25px;
@@ -155,19 +176,6 @@ li{
     margin-right: 30px;
 }
 
-.innercontainer{
-    position: absolute;
-    margin: auto;
-    top: 15%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;    
-}
-
-.display-box{
-    color: #262A41;
-}
 
 select{
     width: 40%!important;
@@ -191,7 +199,9 @@ img {
     background:#30BBB5;
     padding:9px;
     border-radius: 10px; 
-    color: #ffffff; 
+    color: #ffffff;
+    margin-left: 1.9rem; 
+    box-shadow: 2px 15px 30px #30BBB574;
 }
 
 .picture{
@@ -201,4 +211,16 @@ img {
 .pagination{
     float: right;
     align-content: flex-end;
+}
+
+.username{
+   padding-left: 0.3rem;
+}
+
+.themail, .thenumb{
+    color: #BABDD1;
+}
+
+.themail{
+    margin-right: 0.9rem;
 }

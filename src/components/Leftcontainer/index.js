@@ -5,7 +5,7 @@ import {faUsers, faMale, faFemale} from '@fortawesome/free-solid-svg-icons';
 
 const Index = ()=> {
     return (
-        <div className="innercontainer">
+        <div className="leftcontent">
             <h4>Hello,<strong>Emerald</strong></h4>
             <p>Welcome to your dashboard, kindly sort through the user base</p>
             <Search />

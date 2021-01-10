@@ -12,7 +12,7 @@ const Index =(props)=> {
                     <Row>
                         <Col m={2} s={12} className="picture"><img src={picture} alt={alt} /></Col>
                         <Col m={10} s={12}>
-                            <p>{firstname}<span>{lastname}</span></p>
+                            <p><b>{firstname}<span className="username">{lastname}</span></b></p>
                             <p>
                                 <span>{strnumber}</span>
                                 <span>{strname},</span>
@@ -20,9 +20,9 @@ const Index =(props)=> {
                                 <span>{country}</span>
                             </p>
                             <p>
-                                <span>{email}</span>
-                                <span>{phoneno}</span>
-                                <span className="pointer"> <FontAwesomeIcon icon={faArrowRight} size="1x" /></span>
+                                <span className="themail">{email}</span>
+                                <span className="thenumb">{phoneno}</span>
+                                <span className="pointer "> <FontAwesomeIcon icon={faArrowRight} size="1x" /></span>
                             </p>
                         </Col>
                     </Row>
