@@ -7,6 +7,7 @@ body{
     height: 1080px;
     background: #262A41 0% 0% no-repeat padding-box;
     opacity: 1;
+    color: #000000;
 }
 
 .rightlayer{
@@ -17,7 +18,7 @@ body{
     top: 20px;
     left: 938px;
     width: 961px;
-    height: 1047px;
+    height: 1080px;
 }
 
 .info-details{
@@ -27,30 +28,6 @@ body{
     height: 68px;
 }
 
-/* .input-field input[type=search]:focus:not(browser-default){
-    background-color: #3C3F54!important;
-    color: #F7F7FF!important; 
-}
-
-nav{
-    background-color: #3C3F54!important;
-    width: 40%!important;
-    color: #F7F7FF!important;
-}
-
-
- i.material-icons, .label-icon{
-    color: white!important;
-}
-
-.input-field{
-    border: 3px solid #3C3F54;
-    border-radius: 30px!important;
-} */
-/* 
-#TextInput-3{
-    width: 100%!important;
-} */
 .searchbox{
     position: relative;
     display: inline-block;
@@ -66,9 +43,26 @@ nav{
     margin-top: 8%;
     width: 150%;
     height: 40px;
-    background:#f1f3f4;
+    background:#3C3F54;
     border-radius: 25px;
-    border: 2px solid #f1f3f4;
+    border: 2px solid #3C3F54;
+}
+.searchbox2 input{
+    z-index: 0;
+    margin-top: 8%;
+    width: 50%;
+    height: 40px;
+    background:#F7F7FF;
+    border-radius: 25px;
+    border: 2px solid #707070;
+}
+
+.select-place{
+    z-index: 0;
+    height: 40px;
+    background:#F7F7FF;
+    border-radius: 25px;
+    border: 2px solid #707070;
 }
 
 form{
@@ -108,7 +102,7 @@ form{
     right:5%;  
 }
 
-a{
+.social{
     color: #ffffff!important;
 }
 
@@ -151,7 +145,7 @@ li{
     margin-top: 30px;
 }
 
-span{
+.all,.male,.female{
     margin: 35px;
     letter-spacing: -0.02px;
     color: #FFFFFF;
@@ -183,4 +177,28 @@ select{
 
 img {
     border-radius: 50%;
+    border: 3px solid #75D6D1!important;
+}
+
+.card-panel{
+    box-shadow: 10px 10px 40px #0000000D;
+    border-radius: 18px !important;
+    width: 600px;
+    margin: auto!important;  
+}
+
+.pointer{
+    background:#30BBB5;
+    padding:9px;
+    border-radius: 10px; 
+    color: #ffffff; 
+}
+
+.picture{
+    margin-top: 30px;
+}
+
+.pagination{
+    float: right;
+    align-content: flex-end;
 }
