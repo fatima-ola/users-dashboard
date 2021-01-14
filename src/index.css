@@ -29,16 +29,6 @@ body{
     margin: auto;
 }
 
-/* .innercontainer{
-    position: absolute;
-    margin: auto;
-    top: 15%;
-    right: 0;
-    bottom: 0;
-    margin-left: 10%;
-    width: 100%;   
-} */
-
 .display-box{
     color: #262A41;
 }
@@ -141,12 +131,14 @@ li{
     background:#30BBB5;
     padding:35px;
     border-radius: 20px; 
+    cursor: pointer;
 }
 
 .users3{
     background: #7946C1;
     padding:35px;
-    border-radius: 20px; 
+    border-radius: 20px;
+    cursor: pointer; 
 }
 
 .fa-3x{
@@ -196,11 +188,10 @@ img {
 }
 
 .pointer{
+    padding-left: 20px;
     background:#30BBB5;
-    padding:9px;
     border-radius: 10px; 
     color: #ffffff;
-    margin-left: 1.9rem; 
     box-shadow: 2px 15px 30px #30BBB574;
 }
 
@@ -221,6 +212,43 @@ img {
     color: #BABDD1;
 }
 
-.themail{
-    margin-right: 0.9rem;
-}
+.searcher {
+    padding: 0 1.5rem;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-areas:
+      'find country togglesw'
+      'find country togglesw';
+  }
+
+  .find {
+    grid-area: find;
+  }
+  
+  .country {
+    grid-area: country;
+  }
+  
+  .togglesw {
+    grid-area: togglesw;
+  }
+
+  .contact-details {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-areas:
+      'themail thenumb pointer'
+      'themail thenumb pointer';
+  }
+
+  .themail {
+    grid-area: themail;
+  }
+  
+  .thenumb {
+    grid-area: thenumb;
+  }
+  
+  .pointer {
+    grid-area: pointer;
+  }

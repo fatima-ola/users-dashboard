@@ -19,7 +19,7 @@ const Index =(props)=> {
                                 <span>{state},</span>
                                 <span>{country}</span>
                             </p>
-                            <p>
+                            <p className="contact-details">
                                 <span className="themail">{email}</span>
                                 <span className="thenumb">{phoneno}</span>
                                 <span className="pointer "> <FontAwesomeIcon icon={faArrowRight} size="1x" /></span>

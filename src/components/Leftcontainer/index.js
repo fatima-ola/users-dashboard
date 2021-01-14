@@ -3,8 +3,11 @@ import Search from './../Search/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUsers, faMale, faFemale} from '@fortawesome/free-solid-svg-icons';
 
-const Index = ()=> {
-    return (
+
+const Index = (props)=> {
+    const {handleAlluser, handleMale, handleFemale} = props
+
+   return (
         <div className="leftcontent">
             <h4>Hello,<strong>Emerald</strong></h4>
             <p>Welcome to your dashboard, kindly sort through the user base</p>
@@ -13,18 +16,18 @@ const Index = ()=> {
             <ul className="socialicon">
                 <li>
                 <a href="users" className="users1 social">
-                    <FontAwesomeIcon icon={faUsers} size="3x" />
+                    <FontAwesomeIcon icon={faUsers} size="3x" onClick={handleAlluser}/>
                 </a>     
                 </li>
                 <li>
-                <a href="users" className="users2 social">
+                <button className="users2 social" onClick={handleMale}>
                     <FontAwesomeIcon icon={faMale} size="3x" />
-                </a> 
+                </button> 
                 </li>
                 <li>
-                <a href="users" className="users3 social">
+                <button className="users3 social" onClick={handleFemale}>
                     <FontAwesomeIcon icon={faFemale} size="3x" />
-                </a> 
+                </button> 
                 </li>  
             </ul>
             <div className="label">
