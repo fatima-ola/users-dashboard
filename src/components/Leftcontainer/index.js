@@ -15,9 +15,9 @@ const Index = (props)=> {
             <h6>Show Users</h6>   
             <ul className="socialicon">
                 <li>
-                <a href="users" className="users1 social">
-                    <FontAwesomeIcon icon={faUsers} size="3x" onClick={handleAlluser}/>
-                </a>     
+                <button className="users1 social"  onClick={handleAlluser}>
+                    <FontAwesomeIcon icon={faUsers} size="3x"/>
+                </button>     
                 </li>
                 <li>
                 <button className="users2 social" onClick={handleMale}>

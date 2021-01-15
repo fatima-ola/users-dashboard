@@ -19,43 +19,54 @@ const Index = ()=> {
             const data = await fetch(userApi);
             const response = await data.json();
             const responseArray = response.results;
-            console.log(responseArray);
-            
             setAllusers(responseArray); 
+            
         }
 
         fetchApi()
     }, []);
 
     const handleLocation = (e) => {
-        console.log("countries", allusers.location.country)
+        e.preventDefault();
+        const {name, value} = e.currentTarget;
+        if(name === "location"){
+            setLocation(value);
+            const searchLocation = allusers.filter(function(obj) {
+                return obj["location"]["country"] === value;    
+            });
+            setAllusers(searchLocation);
+        }
+      
+        
     }
 
     const handleSearch = (e) => {
         const text = e.target.value;
-        console.log("text", text);
         setSearch(text);
             e.preventDefault();
         const searchArr = allusers.filter(function(obj) {
-            return obj["name"]["first"].toLowerCase() === text.toLowerCase();
+            return obj["name"]["first"] === text;
         });
-        console.log("searchArr", searchArr);
         setAllusers(searchArr);
     }
     // For left
     const handleAlluser =(e) => {
-        
-
+        e.preventDefault();
+        const allClickedUsers = allusers
+        setAllusers(allClickedUsers)       
     }
 
     const handleMale = (e) => {
+        e.preventDefault();
         const searchMale = allusers.filter(function(obj) {
             return obj["gender"] === "male";
+           
         });
         setAllusers(searchMale);
     }
 
     const handleFemale = (e) => {
+        e.preventDefault();
         const searchFemale = allusers.filter(function(obj) {
             return obj["gender"] === "female";
         });
@@ -84,11 +95,11 @@ const Index = ()=> {
                     <Rightcontainer search={search} handleSearch={handleSearch}
                     location={location}
                    handleLocation={handleLocation}
-                   allusers={allusers}/>
+                   allusers={allusers} />
                     <Posts allusers={currentPosts} />
                     <Pagination postsPerPage={postsPerPage} totalPosts={allusers.length} paginate={paginate}/>
                 <div>
-               
+  
                 </div>
             
                 </div>
