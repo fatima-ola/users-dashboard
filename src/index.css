@@ -121,20 +121,21 @@ li{
 }
 
 .users1{
-    background: #F935A9;
+    background: #F935A9 !important;
     padding: 7px 15px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .users2{
-    background:#30BBB5;
+    background:#30BBB5 !important;
     padding: 7px 20px;
     border-radius: 20px; 
     cursor: pointer;
 }
 
 .users3{
-    background: #7946C1;
+    background: #7946C1 !important;
     padding: 7px 20px;
     border-radius: 20px;
     cursor: pointer; 

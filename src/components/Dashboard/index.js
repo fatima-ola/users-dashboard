@@ -7,6 +7,7 @@ import Rightcontainer from './../Rightcontainer/index';
 
 const Index = ()=> {
     const[allusers, setAllusers] = useState([]);
+    const[users, setUsers] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(3);
     const [search, setSearch] = useState();
@@ -18,8 +19,9 @@ const Index = ()=> {
         const fetchApi = async () => {
             const data = await fetch(userApi);
             const response = await data.json();
-            const responseArray = response.results;
+            const responseArray = await response.results;
             setAllusers(responseArray); 
+            setUsers(responseArray)
             
         }
 
@@ -50,11 +52,17 @@ const Index = ()=> {
         setAllusers(searchArr);
     }
     // For left
-    const handleAlluser =(e) => {
+    const handleAlluser =  (e) => { 
         e.preventDefault();
-        const allClickedUsers = allusers
-        setAllusers(allClickedUsers)       
+        const searchAll = users.map(function(user) {
+            return user;
+           
+        });
+        setAllusers(searchAll );         
     }
+
+
+        // setAllusers(allusers)  
 
     const handleMale = (e) => {
         e.preventDefault();
