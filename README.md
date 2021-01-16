@@ -1,3 +1,18 @@
+# Link to Project Site
+## https://users-profile-dashboard.netlify.app/
+
+# Technologies used in building the project
+## HTML5, CSS3, JavaScript, React, React-Materialize.
+
+#Other Information
+## Link to one of the project I worked on recently with a group of 5 team members: https://agrokonnect.netlify.app/
+## This project helps to connect farmer to buyers online. It is still a work in progress. Technologies used are HTML5, CSS3, JavaScript, ReactJs and Firebase
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
